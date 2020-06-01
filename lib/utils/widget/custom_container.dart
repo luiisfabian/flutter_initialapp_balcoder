@@ -12,8 +12,8 @@ class CustomContainer extends StatelessWidget {
     double widthMedia = MediaQuery.of(context).size.width;
     return Container(
       padding: EdgeInsets.all(10.0),
-      width: widthMedia * 0.20,
-      height: heightMedia * 0.30,
+      width: widthMedia * 0.70,
+      height: heightMedia * 0.40,
       decoration: BoxDecoration(
        
         color:  count > 3 ?  Colors.deepOrangeAccent: Colors.red,
@@ -26,7 +26,7 @@ class CustomContainer extends StatelessWidget {
               title,
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 20.0,
+                  fontSize: widthMedia * 0.1,
                   fontFamily: 'Times New Roman'),
             ),
             SizedBox(),
@@ -34,7 +34,7 @@ class CustomContainer extends StatelessWidget {
               count > 3 ? "play":count.toString(),
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 100.0,
+                  fontSize: widthMedia * 0.2,
                   fontFamily: 'Times New Roman'),
             )
           ],
